@@ -18,5 +18,10 @@ public class EmployeeStackSearch {
 
         //Displaying stack with their positions from top
         System.out.println("Top element (peek): " + EmployeeStackSearch.peek());
+
+        int position = EmployeeStackSearch.search("Employee A submitted report");
+        if (position != -1){
+            System.out.println();
+        }
     }
 }
