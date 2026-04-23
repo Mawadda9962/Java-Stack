@@ -15,5 +15,8 @@ public class EmployeeStackSearch {
 
         //Displaying the elements on stack
         System.out.println("Stack after pushes: " + EmployeeStackSearch);
+
+        //Displaying stack with their positions from top
+        System.out.println("Top element (peek): " + EmployeeStackSearch.peek());
     }
 }
