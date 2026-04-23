@@ -38,18 +38,15 @@ public class BrowserHistorySimulator {
         //Checking if the history is empty at different points
         System.out.println("Is history empty? " + BrowserHistorySimulator.isEmpty());
 
-
+        //Adding 2 new page visits after going back
         BrowserHistorySimulator.push("openai.com");
         System.out.println(BrowserHistorySimulator.peek());
 
         BrowserHistorySimulator.push("Google.com");
         System.out.println(BrowserHistorySimulator.peek());
 
-        System.out.println();
-
-
-
-
+        //Displaying the final browsing history
+        System.out.println(BrowserHistorySimulator);
 
 
     }
