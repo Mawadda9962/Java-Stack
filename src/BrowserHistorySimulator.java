@@ -39,6 +39,13 @@ public class BrowserHistorySimulator {
         System.out.println("Is history empty? " + BrowserHistorySimulator.isEmpty());
 
 
+        BrowserHistorySimulator.push("openai.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
+        BrowserHistorySimulator.push("Google.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
+        System.out.println();
 
 
 
