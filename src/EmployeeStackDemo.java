@@ -5,7 +5,7 @@ public class EmployeeStackDemo {
     public static void main(String[] args){
         Stack<String> EmployeeStackDemo = new Stack<>();
 
-        //Creating a stack
+        //Creating a stack to store employee actions
         EmployeeStackDemo.push("Employee A submitted report");
         EmployeeStackDemo.push("Employee B updating the data");
         EmployeeStackDemo.push("Employee c adding the changes");
