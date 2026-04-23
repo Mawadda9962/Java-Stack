@@ -19,9 +19,13 @@ public class EmployeeStackSearch {
         //Displaying stack with their positions from top
         System.out.println("Top element (peek): " + EmployeeStackSearch.peek());
 
+        //Useing search() to find the position of different employee actions
         int position = EmployeeStackSearch.search("Employee A submitted report");
         if (position != -1){
-            System.out.println();
+            System.out.println("Element A found at position + position");
+
+        }else {
+            System.out.println("Employee action not found");
         }
     }
 }
