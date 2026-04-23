@@ -12,6 +12,7 @@ public class EmployeeStackDemo {
         EmployeeStackDemo.push("Employee D completed the report");
         EmployeeStackDemo.push("Employee E logging out");
 
+        //Displaying the elements on stack
         System.out.println("Stack after pushes: " + EmployeeStackDemo);
 
 
