@@ -32,6 +32,8 @@ public class BrowserHistorySimulator {
         BrowserHistorySimulator.pop();
         System.out.println("Current page: " + BrowserHistorySimulator.peek());
 
+        //Using peek() to show the current page without navigating
+        System.out.println("Peek current page: " + BrowserHistorySimulator.peek());
 
 
 
