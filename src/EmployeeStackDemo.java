@@ -15,7 +15,8 @@ public class EmployeeStackDemo {
         //Displaying the elements on stack
         System.out.println("Stack after pushes: " + EmployeeStackDemo);
 
-
+        // Adding one more employee action record
+        EmployeeStackDemo.push("Employee F Approving the report");
 
 
 
