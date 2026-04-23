@@ -35,6 +35,8 @@ public class BrowserHistorySimulator {
         //Using peek() to show the current page without navigating
         System.out.println("Peek current page: " + BrowserHistorySimulator.peek());
 
+        //Checking if the history is empty at different points
+        System.out.println("Is history empty? " + BrowserHistorySimulator.isEmpty());
 
 
 
