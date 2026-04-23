@@ -25,7 +25,12 @@ public class BrowserHistorySimulator {
         // Display full history
         System.out.println("Full History: " + BrowserHistorySimulator);
 
+        //Simulate pressing Back button 2 times using pop()
+        BrowserHistorySimulator.pop();
+        System.out.println("Current page: " + BrowserHistorySimulator.peek());
 
+        BrowserHistorySimulator.pop();
+        System.out.println("Current page: " + BrowserHistorySimulator.peek());
 
 
 
