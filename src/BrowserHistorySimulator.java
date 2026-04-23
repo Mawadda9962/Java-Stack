@@ -7,10 +7,22 @@ public class BrowserHistorySimulator {
 
         //Creating a stack to store web pages
         BrowserHistorySimulator.push("github.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
         BrowserHistorySimulator.push("youtube.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
         BrowserHistorySimulator.push("facebook.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
         BrowserHistorySimulator.push("google.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
         BrowserHistorySimulator.push("Netflex.com");
+        System.out.println(BrowserHistorySimulator.peek());
+
+
+
 
 
 
