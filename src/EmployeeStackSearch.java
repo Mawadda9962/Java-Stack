@@ -39,11 +39,10 @@ public class EmployeeStackSearch {
         //Useing contains() to check if specific actions exist in the stack
         System.out.println(EmployeeStackSearch.contains("Employee E logging out"));
 
-
-
+        //Iterating through the stack using a standard for loop (from top to bottom)
         System.out.println("Stack elements");
         for(String actions : EmployeeStackSearch){
-            System.out.println(EmployeeStackSearch);
+            System.out.println(actions);
 
         }
 
