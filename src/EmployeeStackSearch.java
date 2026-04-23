@@ -10,6 +10,7 @@ public class EmployeeStackSearch {
         EmployeeStackDemo.push("Employee c adding the changes");
         EmployeeStackDemo.push("Employee D completed the report");
         EmployeeStackDemo.push("Employee E logging out");
+        EmployeeStackDemo.push("Employee F Approving the report");
 
 
     }
