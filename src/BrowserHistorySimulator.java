@@ -22,6 +22,12 @@ public class BrowserHistorySimulator {
         System.out.println(BrowserHistorySimulator.peek());
 
 
+        // Display full history
+        System.out.println("Full History: " + BrowserHistorySimulator);
+
+
+
+
 
 
 
