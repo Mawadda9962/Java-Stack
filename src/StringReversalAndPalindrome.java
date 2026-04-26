@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Stack;
 
 public class StringReversalAndPalindrome {
@@ -35,18 +36,28 @@ public class StringReversalAndPalindrome {
         reversed += EmployeeStackSearch.pop();
         reversed += EmployeeStackSearch.pop();
 
-        //p
+        //printing
         System.out.println(reversed);
-
-
-
-
-
-
-
-
-
-
-
     }
+        public static boolean palindrome(String str){
+
+        if(str == null){
+            return false;
+        }
+            str = str.toLowerCase();
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 }
