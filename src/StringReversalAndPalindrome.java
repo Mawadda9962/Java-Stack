@@ -49,6 +49,11 @@ public class StringReversalAndPalindrome {
         //convert to lower case
         Stack<Character> stack = new Stack<>();
 
+        //push all characters
+        for (int i = 0; i < str.length(); i++){
+            stack.push(str.charAt(i));
+        }
+
 
 
 
