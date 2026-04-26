@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class HtmlTagValidator {
     public static void main(String[] args){
 
@@ -6,5 +8,14 @@ public class HtmlTagValidator {
 
 
     }
-    public
+    public static boolean validate(String html){
+
+        Stack<String> stack = new Stack<>();
+
+        for(int i = 0; i < html.length(); i++){
+            if(html.charAt(i) == '<'){
+
+            }
+        }
+    }
 }
