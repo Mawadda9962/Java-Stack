@@ -19,6 +19,7 @@ public class PostfixEvaluator {
         }
 
 
+        //push operator on stack
         for(int i = 0; i < expression.length(); i++){
             char a = expression.charAt(i);
 
@@ -27,8 +28,11 @@ public class PostfixEvaluator {
             }else {
 
                 if(stack.size() < 2){
-                    System.out.println();
+                    System.out.println("Invalid expression");
+                    return null;
                 }
+
+
 
 
 
