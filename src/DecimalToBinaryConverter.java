@@ -25,6 +25,7 @@ public class DecimalToBinaryConverter {
 
         System.out.println(DecimalToBinaryConverter);
 
+        // Building binary using pop()
         String binary = "";
 
         binary += DecimalToBinaryConverter.pop();
@@ -32,6 +33,8 @@ public class DecimalToBinaryConverter {
         binary += DecimalToBinaryConverter.pop();
         binary += DecimalToBinaryConverter.pop();
 
+
+        System.out.println(binary);
 
 
 
