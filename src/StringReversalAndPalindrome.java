@@ -27,6 +27,17 @@ public class StringReversalAndPalindrome {
 
         //reversing using pop()
 
+        String reversed = "";
+
+        reversed += EmployeeStackSearch.pop();
+        reversed += EmployeeStackSearch.pop();
+        reversed += EmployeeStackSearch.pop();
+        reversed += EmployeeStackSearch.pop();
+        reversed += EmployeeStackSearch.pop();
+
+        //p
+        System.out.println(reversed);
+
 
 
 
