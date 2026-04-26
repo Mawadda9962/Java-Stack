@@ -36,7 +36,15 @@ public class PostfixEvaluator {
                 int operand1 = stack.pop();
                 int operand2 = stack.pop();
 
-                //
+                //use multiple operator
+                switch(a){
+                    case '+':
+                        stack.push(operand2 + operand1);
+                        break;
+
+                    case '-':
+
+                }
 
 
 
