@@ -23,7 +23,19 @@ public class DecimalToBinaryConverter {
         DecimalToBinaryConverter.push(tem % 2);
         tem = tem / 2;
 
-        System.out.println();
+        System.out.println(DecimalToBinaryConverter);
+
+        String binary = "";
+
+        binary += DecimalToBinaryConverter.pop();
+        binary += DecimalToBinaryConverter.pop();
+        binary += DecimalToBinaryConverter.pop();
+        binary += DecimalToBinaryConverter.pop();
+
+
+
+
+
 
 
 
