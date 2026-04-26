@@ -46,6 +46,11 @@ public class StringReversalAndPalindrome {
         }
             str = str.toLowerCase();
 
+        //convert to lower case
+        Stack<Character> stack = new Stack<>();
+
+
+
 
 
         }
