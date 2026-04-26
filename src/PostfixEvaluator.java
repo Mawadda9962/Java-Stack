@@ -32,10 +32,11 @@ public class PostfixEvaluator {
                     return null;
                 }
 
-
-
+                //pop operand
                 int operand1 = stack.pop();
                 int operand2 = stack.pop();
+
+                //
 
 
 
