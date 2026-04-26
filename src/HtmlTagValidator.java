@@ -5,7 +5,7 @@ public class HtmlTagValidator {
 
         String html1 = "<b>Text</b>";
 
-
+        System.out.println();
     }
     public static boolean validate(String html){
 
