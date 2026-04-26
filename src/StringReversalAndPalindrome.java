@@ -13,14 +13,17 @@ public class StringReversalAndPalindrome {
         System.out.println(EmployeeStackSearch);
 
 
-        EmployeeStackSearch.push('a');
+        EmployeeStackSearch.push('e');
         System.out.println(EmployeeStackSearch);
 
         EmployeeStackSearch.push('l');
-        System.out.println("EmployeeStackSearch");
+        System.out.println(EmployeeStackSearch);
 
         EmployeeStackSearch.push('l');
-        System.out.println("EmployeeStackSearch");
+        System.out.println(EmployeeStackSearch);
+
+        EmployeeStackSearch.push('l');
+        System.out.println(EmployeeStackSearch);
 
 
 
