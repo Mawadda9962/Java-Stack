@@ -13,16 +13,20 @@ public class PostfixEvaluator {
         // Declaring a Stack variable with Integer type
         Stack<Integer> stack = new Stack<>();
 
-        //Empty or null
+        // Empty or null
         if (expression == null || expression.isEmpty() ){
             System.out.println("Empty expression");
             return null;
         }
 
-
-        //push operator on stack
+        // push operator on stack
         for(int i = 0; i < expression.length(); i++){
             char a = expression.charAt(i);
+
+            //ignore spaces
+            if(a == ' '){
+                continue;
+            }
 
             if(Character.isDigit(a)){
                 stack.push(Character.getNumericValue(a));
@@ -33,36 +37,36 @@ public class PostfixEvaluator {
                     return null;
                 }
 
-                //pop operand
+                // pop operand
                 int operand1 = stack.pop();
                 int operand2 = stack.pop();
 
-                //use multiple operator
+                // use multiple operator
                 switch(a){
                     case '+':
                         stack.push(operand2 + operand1);
                         break;
 
                     case '-':
-                        stack.push(operand2 + operand1);
+                        stack.push(operand2 - operand1);
                         break;
 
                     case '*':
-                        stack.push(operand2 + operand1);
+                        stack.push(operand2 * operand1);
                         break;
 
-                    case'/':
+                    case '/':
                         if(operand1 == 0){
                             System.out.println("Division by zero");
                             return null;
                         }
-
                         stack.push(operand2 / operand1);
                         break;
 
                     case '%':
                         stack.push(operand2 % operand1);
                         break;
+
                     default:
                         System.out.println("Invalid operator");
                         stack.clear();
@@ -70,11 +74,13 @@ public class PostfixEvaluator {
                 }
             }
         }
+
+        //final validation
+        if(stack.size() != 1){
+            System.out.println("Invalid expression");
+            return null;
+        }
+
         return stack.pop();
     }
 }
-
-
-
-
-
