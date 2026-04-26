@@ -54,6 +54,10 @@ public class StringReversalAndPalindrome {
             stack.push(str.charAt(i));
         }
 
+        for(int i = 0; i < str.length(); i++ ){
+            if(str.charAt(i) != stack.pop())
+        }
+
 
 
 
