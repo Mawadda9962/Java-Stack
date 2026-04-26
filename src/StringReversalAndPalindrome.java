@@ -8,7 +8,7 @@ public class StringReversalAndPalindrome {
         //First string
         String title1 = "hello";
 
-        //
+        //Pushing characters
         EmployeeStackSearch.push('h');
         System.out.println(EmployeeStackSearch);
 
@@ -22,8 +22,13 @@ public class StringReversalAndPalindrome {
         EmployeeStackSearch.push('l');
         System.out.println(EmployeeStackSearch);
 
-        EmployeeStackSearch.push('l');
+        EmployeeStackSearch.push('o');
         System.out.println(EmployeeStackSearch);
+
+        //reversing using pop()
+
+
+
 
 
 
