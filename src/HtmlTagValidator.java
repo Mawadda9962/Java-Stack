@@ -49,7 +49,14 @@ public class HtmlTagValidator {
             }
         }
 
-        if(stack.isEmpty())
+        if(stack.isEmpty()){
+            System.out.println("Valid");
+            return true;
+
+        }else {
+            System.out.println("Error");
+            return false;
+        }
 
 
 
