@@ -53,22 +53,25 @@ public class PostfixEvaluator {
                     case'/':
                         if(operand1 == 0){
                             System.out.println("Division by zero");
+                            return null;
                         }
 
+                        stack.push(operand2 / operand1);
+                        break;
 
-
+                    case '%':
+                        stack.push(operand2 % operand1);
+                        break;
+                    default:
+                        System.out.println("Invalid operator");
+                        stack.clear();
+                        return null;
                 }
-
-
-
-
-
-
-
             }
-
-
         }
+        return stack.pop();
+    }
+}
 
 
 
