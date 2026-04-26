@@ -1,4 +1,3 @@
-import java.util.Locale;
 import java.util.Stack;
 
 public class StringReversalAndPalindrome {
@@ -6,13 +5,13 @@ public class StringReversalAndPalindrome {
 
         Stack<Character> EmployeeStackSearch = new Stack<>();
 
-        //First string
         String title1 = "hello";
 
-        //Pushing characters
+        System.out.println("Original: " + title1);
+
+        // Push characters
         EmployeeStackSearch.push('h');
         System.out.println(EmployeeStackSearch);
-
 
         EmployeeStackSearch.push('e');
         System.out.println(EmployeeStackSearch);
@@ -26,8 +25,7 @@ public class StringReversalAndPalindrome {
         EmployeeStackSearch.push('o');
         System.out.println(EmployeeStackSearch);
 
-        //reversing using pop()
-
+        // Reverse using pop
         String reversed = "";
 
         reversed += EmployeeStackSearch.pop();
@@ -36,46 +34,35 @@ public class StringReversalAndPalindrome {
         reversed += EmployeeStackSearch.pop();
         reversed += EmployeeStackSearch.pop();
 
-        //printing
-        System.out.println(reversed);
+        System.out.println("Reversed: " + reversed);
+
+        // Palindrome check (CALL METHOD)
+        System.out.println("Is Palindrome: " + palindrome(title1));
     }
-        public static boolean palindrome(String str){
+
+    public static boolean palindrome(String str){
 
         if(str == null){
             return false;
         }
-            str = str.toLowerCase();
 
-        //convert to lower case
+        //Converting to lowercase
+        str = str.toLowerCase();
+
         Stack<Character> stack = new Stack<>();
 
-        //push all characters
-        for (int i = 0; i < str.length(); i++){
+        // Push all characters
+        for(int i = 0; i < str.length(); i++){
             stack.push(str.charAt(i));
         }
 
-        for(int i = 0; i < str.length(); i++ ){
+        // compare with reversed order
+        for(int i = 0; i < str.length(); i++){
             if(str.charAt(i) != stack.pop()){
                 return false;
             }
         }
 
-        return
-
-
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
+        return true;
+    }
 }
