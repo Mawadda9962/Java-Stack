@@ -37,9 +37,21 @@ public class HtmlTagValidator {
                         return false;
                     }
                 }
+                else{
+                    stack.push(tag);
+
+                }
+                System.out.println(stack);
+
+                i = end;
 
 
             }
         }
+
+        if(stack.isEmpty())
+
+
+
     }
 }
