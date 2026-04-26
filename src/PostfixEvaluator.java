@@ -43,6 +43,19 @@ public class PostfixEvaluator {
                         break;
 
                     case '-':
+                        stack.push(operand2 + operand1);
+                        break;
+
+                    case '*':
+                        stack.push(operand2 + operand1);
+                        break;
+
+                    case'/':
+                        if(operand1 == 0){
+                            System.out.println("Division by zero");
+                        }
+
+
 
                 }
 
