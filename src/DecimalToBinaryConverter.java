@@ -10,11 +10,20 @@ public class DecimalToBinaryConverter {
 
         int tem = num;
 
+        //Division process
         DecimalToBinaryConverter.push(tem % 2);
         tem = tem / 2;
 
         DecimalToBinaryConverter.push(tem % 2);
         tem = tem / 2;
+
+        DecimalToBinaryConverter.push(tem % 2);
+        tem = tem / 2;
+
+        DecimalToBinaryConverter.push(tem % 2);
+        tem = tem / 2;
+
+        System.out.println();
 
 
 
