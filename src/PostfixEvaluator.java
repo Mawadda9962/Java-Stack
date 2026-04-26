@@ -5,7 +5,7 @@ public class PostfixEvaluator {
 
         String num1 = " 3 5 +";
 
-        System.out.println();
+        System.out.println(evaluatePostfix(num1));
     }
 
     public static Integer evaluatePostfix(String expression){
