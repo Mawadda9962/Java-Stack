@@ -34,6 +34,13 @@ public class PostfixEvaluator {
 
 
 
+                int operand1 = stack.pop();
+                int operand2 = stack.pop();
+
+
+
+
+
 
 
             }
