@@ -20,6 +20,12 @@ public class NextGreaterElementFinder {
         Stack<String> stack = new Stack<>();
 
         //initialize all as -1
+        for(int i = 0; i < arr.length; i++){
+            result[i] = -1;
+
+        }
+
+
 
     }
 
