@@ -21,6 +21,9 @@ public class InfixToPostfixConverter {
         for(int i = 0; i < expression.length(); i++ ){
             char a = expression.charAt(i);
 
+            //
+            if (a == ' ') continue;
+
 
 
         }
