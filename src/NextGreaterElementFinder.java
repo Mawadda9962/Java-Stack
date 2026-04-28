@@ -25,6 +25,16 @@ public class NextGreaterElementFinder {
 
         }
 
+        for(int i = 0; i < arr.length; i++){
+
+            //check if current element is greater
+            while (!stack.isEmpty() && arr[i] > arr[stack.peek()]) {
+
+
+            }
+
+
+        }
 
 
     }
