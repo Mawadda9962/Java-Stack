@@ -11,10 +11,17 @@ public class NextGreaterElementFinder {
             System.out.println(arr[i] + " " + result[i]);
         }
 
+    }
+
+    //Simple Next Grater function
+    public static int[] nextGrater(int[] arr){
+
+        int[] result = new int[arr.length];
+        Stack<String> stack = new Stack<>();
+
+        //initialize all as -1
 
     }
 
-
-    Stack<String> NextGreaterElementFinder = new Stack<>();
 
 }
