@@ -86,4 +86,10 @@ public class BrowserNavigationSystem {
         // print result
         System.out.println("Forward : " + currentPage);
     }
+    static void show(){
+        System.out.println(currentPage);
+
+
+    }
+}
 
