@@ -13,8 +13,12 @@ public class InfixToPostfixConverter {
     }
 
     public static String evaluate (String expression){
+
+        //clear stacks before each evaluation
         numbers.clear();
         operators.clear();
+
+        ff
 
 
     }
