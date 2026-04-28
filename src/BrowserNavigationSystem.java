@@ -86,11 +86,18 @@ public class BrowserNavigationSystem {
         // print result
         System.out.println("Forward : " + currentPage);
     }
+    //show current state
     static void show(){
         System.out.println(currentPage);
         System.out.println(back);
         System.out.println(forward);
 
+    }
+
+    static void history(){
+        System.out.println(currentPage);
+        System.out.println(back);
+        System.out.println(forward);
     }
 }
 
