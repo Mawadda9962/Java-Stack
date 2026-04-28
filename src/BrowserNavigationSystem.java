@@ -18,6 +18,17 @@ public class BrowserNavigationSystem {
         visitPage("SnapChat.com");
         visitPage("youtube.com");
 
+        goBack();
+        goBack();
+        goForward();
+        visitPage("stackoverflow.com");
+
+
+
+    }
+
+    //method to visit new page
+    static void visitPage(String url) {
 
     }
 }
