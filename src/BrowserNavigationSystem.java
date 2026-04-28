@@ -30,12 +30,16 @@ public class BrowserNavigationSystem {
         history();     // show final history
     }
 
-    //method to visit new page
-    static void visitPage(String url) {
+    // method to visit new page
+    static void visit(String url) {
 
         // check if back stack reached limit
         if (back.size() >= max) {
             System.out.println("History limit reached");
-            back.remove(0);
-    }
-}
+            back.remove(0); // remove oldest page
+        }
+
+        // save current page before moving
+        if (!currentPage.isEmpty()) {
+            back.push(currentPage);
+        }
