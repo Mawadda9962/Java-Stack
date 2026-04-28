@@ -8,10 +8,16 @@ public class BrowserNavigationSystem {
 
     // Store current page
     static String currentPage = "Home";
-
-
+    static int max = 10;
 
     public static void main(String[] args){
+
+        visitPage("LinkedIn.com");
+        visitPage("Google.com");
+        visitPage("CodeLine.com");
+        visitPage("SnapChat.com");
+        visitPage("youtube.com");
+
 
     }
 }
