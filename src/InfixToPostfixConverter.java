@@ -38,8 +38,16 @@ public class InfixToPostfixConverter {
                 }
 
 
+                i--; // step back after loop
 
+                // push number into operand stack
+                numbers.push(Double.parseDouble(num.toString()));
             }
+
+
+
+
+        }
 
 
         }
