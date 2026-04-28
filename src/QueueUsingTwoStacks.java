@@ -6,7 +6,7 @@ public class QueueUsingTwoStacks<T> {
     private Stack<T> output = new Stack<>();
 
     public static void main(String[] args) {
-        // Create an instance of our queue for Integers
+        // Create an instance of our queue for Integer
         QueueUsingTwoStacks<Integer> queue = new QueueUsingTwoStacks<>();
 
         int[] ops = {10, 20, 30, -1, 40, -2, 50, -1, -1, 60, -1, -1};
