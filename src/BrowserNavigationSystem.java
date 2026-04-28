@@ -12,16 +12,16 @@ public class BrowserNavigationSystem {
     public static void main(String[] args) {
 
         // visiting pages
-        visit("Codline.om");
+        visit("youtube.com");
         visit("linkedIn.com");
         visit("gitHub.com");
-        visit("z.com");
-        visit("reddit.com");
+        visit("Google.com");
+        visit("netflex.com");
 
         // navigation actions
-        back();        // go back one page
-        back();        // go back again
-        forward();     // go forward
+        back();
+        back();
+        forward();
         visit("stackoverflow.com"); // new visit clears forward history
 
         forward();
@@ -94,6 +94,7 @@ public class BrowserNavigationSystem {
 
     }
 
+    //show full history
     static void history(){
         System.out.println(currentPage);
         System.out.println(back);
