@@ -24,10 +24,10 @@ public class BrowserNavigationSystem {
         forward();     // go forward
         visit("stackoverflow.com"); // new visit clears forward history
 
-        forward();     // try forward (may not work)
-        back();        // go back
+        forward();
+        back();
 
-        history();     // show final history
+        history();
     }
 
     // method to visit new page
@@ -43,3 +43,30 @@ public class BrowserNavigationSystem {
         if (!currentPage.isEmpty()) {
             back.push(currentPage);
         }
+
+        forward.clear();
+
+        //Set new page as current
+        currentPage = url;
+
+        System.out.println("url");
+
+    }
+    // method to go back
+    static void back() {
+
+        // check if no page to go back to
+        if (back.isEmpty()) {
+            System.out.println("No back history");
+            return;
+        }
+        forward.push(currentPage);
+
+        // get last page from back stack
+        currentPage = back.pop();
+
+        // print result
+        System.out.println("Back  : " + currentPage);
+    }
+
+
