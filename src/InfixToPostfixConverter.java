@@ -19,6 +19,9 @@ public class InfixToPostfixConverter {
         operators.clear();
 
         for(int i = 0; i < expression.length(); i++ ){
+            char a = expression.charAt(i);
+
+
 
         }
 
