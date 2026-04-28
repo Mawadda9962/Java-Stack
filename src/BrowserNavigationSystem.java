@@ -1,34 +1,41 @@
-import java.util.Stack;
+import java.util.Stack; // import stack class
 
 public class BrowserNavigationSystem {
 
-    //Adding Stacks for back and forward navigation
-    static Stack<String> backStack = new Stack<>();
-    static Stack<String> forwardStack = new Stack<>();
+    // stacks for navigation
+    static Stack<String> back = new Stack<>();     // store previous pages
+    static Stack<String> forward = new Stack<>();  // store next pages
 
-    // Store current page
-    static String currentPage = "Home";
-    static int max = 10;
+    static String currentPage = ""; // current page
+    static int max = 10;            // max size of back history
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        visitPage("LinkedIn.com");
-        visitPage("Google.com");
-        visitPage("CodeLine.com");
-        visitPage("SnapChat.com");
-        visitPage("youtube.com");
+        // visiting pages
+        visit("Codline.om");
+        visit("linkedIn.com");
+        visit("gitHub.com");
+        visit("z.com");
+        visit("reddit.com");
 
-        goBack();
-        goBack();
-        goForward();
-        visitPage("stackoverflow.com");
+        // navigation actions
+        back();        // go back one page
+        back();        // go back again
+        forward();     // go forward
+        visit("stackoverflow.com"); // new visit clears forward history
 
+        forward();     // try forward (may not work)
+        back();        // go back
 
-
+        history();     // show final history
     }
 
     //method to visit new page
     static void visitPage(String url) {
 
+        // check if back stack reached limit
+        if (back.size() >= max) {
+            System.out.println("History limit reached");
+            back.remove(0);
     }
 }
