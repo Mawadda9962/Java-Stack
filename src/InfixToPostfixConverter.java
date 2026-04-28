@@ -27,6 +27,18 @@ public class InfixToPostfixConverter {
             //if number handling  multi-digit + decimals
             if (Character.isDigit(a) || a == "."){
 
+                StringBuilder num = new StringBuilder();
+
+                // build full number
+                while (i < expression.length() &&
+                        (Character.isDigit(expression.charAt(i)) || expression.charAt(i) == '.')) {
+
+                    num.append(expression.charAt(i));
+                    i++;
+                }
+
+
+
             }
 
 
