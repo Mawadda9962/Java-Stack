@@ -69,4 +69,21 @@ public class BrowserNavigationSystem {
         System.out.println("Back  : " + currentPage);
     }
 
+    static void forward() {
+
+        // check if no forward page
+        if (forward.isEmpty()) {
+            System.out.println("No forward history");
+            return;
+        }
+
+        // move current page to back stack
+        back.push(currentPage);
+
+        // get next page from forward stack
+        currentPage = forward.pop();
+
+        // print result
+        System.out.println("Forward : " + currentPage);
+    }
 
