@@ -9,21 +9,16 @@ public class QueueUsingTwoStacks<T> {
         // Create an instance of our queue for Integers
         QueueUsingTwoStacks<Integer> queue = new QueueUsingTwoStacks<>();
 
-        // Define operations: positive = enqueue, -1 = dequeue, -2 = peek
         int[] ops = {10, 20, 30, -1, 40, -2, 50, -1, -1, 60, -1, -1};
 
         for (int op : ops) {
             if (op == -1) {
-                // If the operation is -1, remove and print the front item
                 System.out.println("Dequeued: " + queue.dequeue());
             } else if (op == -2) {
-                // If the operation is -2, just look at the front item
                 System.out.println("Peeked: " + queue.peek());
             } else {
-                // Otherwise, treat the number as data to add to the queue
                 queue.enqueue(op);
             }
-            // Print the internal state of both stacks after every operation
             queue.displayStatus();
         }
     }
