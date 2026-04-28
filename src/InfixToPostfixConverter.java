@@ -18,7 +18,9 @@ public class InfixToPostfixConverter {
         numbers.clear();
         operators.clear();
 
-        ff
+        for(int i = 0; i < expression.length(); i++ ){
+
+        }
 
 
     }
