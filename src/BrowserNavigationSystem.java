@@ -88,7 +88,8 @@ public class BrowserNavigationSystem {
     }
     static void show(){
         System.out.println(currentPage);
-
+        System.out.println(back);
+        System.out.println(forward);
 
     }
 }
