@@ -21,9 +21,13 @@ public class InfixToPostfixConverter {
         for(int i = 0; i < expression.length(); i++ ){
             char a = expression.charAt(i);
 
-            //
+            //ignore spaces
             if (a == ' ') continue;
 
+            //if number handling  multi-digit + decimals
+            if (Character.isDigit(a) || a == "."){
+
+            }
 
 
         }
