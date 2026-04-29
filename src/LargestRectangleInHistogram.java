@@ -34,7 +34,7 @@ public class LargestRectangleInHistogram {
 
     public static int bruteForceLargestRectangle(int[] barHeights) {
         int peakArea = 0; // Area tracker
-        for (int i = 0; i < barHeights.length; i++) { // Start point
+        for (int i = 0; i < barHeights.length; i++) {
             int minH = barHeights[i]; // Track min
             for (int j = i; j < barHeights.length; j++) {
                 if (barHeights[j] < minH) minH = barHeights[j]; // Update min
