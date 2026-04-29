@@ -3,6 +3,8 @@ import java.util.Stack;
 public class MinStack {
     // Stores all the numbers pushed into the stack
     static Stack<Integer> primaryData = new Stack<>();
+
+    //Stores the minimum values
     static Stack<Integer> minimumData = new Stack<>();
     public static void main(String[] args) {
         push(5);
