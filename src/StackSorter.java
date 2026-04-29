@@ -23,4 +23,15 @@ public class StackSorter  {
         while (!inputStack.isEmpty()) {
             int elementToPlace = inputStack.pop();
 
+            // Move elements back to inputStack if they are larger than the current element
+            while (!auxiliaryStack.isEmpty() && auxiliaryStack.peek() > elementToPlace) {
+                inputStack.push(auxiliaryStack.pop());
+            }
+            auxiliaryStack.push(elementToPlace);
+        }
+        // Transfer from auxiliary back to original to get the requested order
+        while (!auxiliaryStack.isEmpty()) {
+            inputStack.push(auxiliaryStack.pop());
+        }
+    }
 }
