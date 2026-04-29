@@ -1,28 +1,43 @@
 import java.util.Stack;
 
 public class MinStack {
-    // Primary storage and the tracking stack for minimum values
-    static Stack<Integer> primaryStack = new Stack<>();
-    static Stack<Integer> trackMinStack = new Stack<>();
-
+    // Stores all the numbers pushed into the stack
+    static Stack<Integer> primaryData = new Stack<>();
+    static Stack<Integer> minimumData = new Stack<>();
     public static void main(String[] args) {
         push(5);
         push(3);
         push(10);
         push(30);
         push(2);
+        display();
+        System.out.println("Getmin : "+GetMin());
+        System.out.println("Popped : "+pop());
 
-        //Outputting results directly
-        System.out.println("Getmin : " + GetMin());
-        System.out.println("Popped : " + pop());
-        System.out.println("New Getmin : " + GetMin());
     }
-
-    public static void push(int inputVal) {
-        primaryStack.push(inputVal);
-
-        // If trackMinStack is empty or inputVal is a new minimum, record it
-        if (trackMinStack.isEmpty() || inputVal <= trackMinStack.peek()) {
-            trackMinStack.push(inputVal);
+    public static void  push(int value){
+        primaryData.push(value);
+        if (minimumData.isEmpty() || value<=minimumData.peek()){
+            minimumData.push(value);
         }
     }
+    public static int pop() {
+        if (primaryData.isEmpty()) {
+            System.out.println("Stack is empty cannot pop.");
+            return -1;
+        }
+        int popped = primaryData.pop();
+        if (popped == minimumData.peek()) {
+            minimumData.pop();
+        }
+        return popped;
+    }
+    public static Integer GetMin(){
+        return minimumData.peek();
+    }
+    public static void display() {
+        System.out.println("primaryData: " + primaryData);
+        System.out.println("minimumData:  " + minimumData);
+    }
+
+}
