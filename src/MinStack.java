@@ -12,8 +12,17 @@ public class MinStack {
         push(30);
         push(2);
 
-        // Outputting results directly
+        //Outputting results directly
         System.out.println("Getmin : " + GetMin());
         System.out.println("Popped : " + pop());
         System.out.println("New Getmin : " + GetMin());
+    }
+
+    public static void push(int inputVal) {
+        primaryStack.push(inputVal);
+
+        // If trackMinStack is empty or inputVal is a new minimum, record it
+        if (trackMinStack.isEmpty() || inputVal <= trackMinStack.peek()) {
+            trackMinStack.push(inputVal);
+        }
     }
