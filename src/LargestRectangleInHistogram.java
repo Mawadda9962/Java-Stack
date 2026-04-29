@@ -14,7 +14,7 @@ public class LargestRectangleInHistogram {
 
         if (barHeights.length == 0) return 0;
 
-        for (int cursor = 0; cursor <= barHeights.length; cursor++) { // Process bars
+        for (int cursor = 0; cursor <= barHeights.length; cursor++) {
             int currentVal = (cursor == barHeights.length) ? 0 : barHeights[cursor]; // Current height
 
             while (!indexStack.isEmpty() && currentVal < barHeights[indexStack.peek()]) {
