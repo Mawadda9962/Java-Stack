@@ -36,6 +36,7 @@ public class MinStack {
         return popped;
     }
     public static Integer GetMin(){
+        //Returns the top of minimumData without removing it
         return minimumData.peek();
     }
     public static void display() {
