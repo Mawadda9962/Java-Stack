@@ -12,7 +12,8 @@ public class MinStack {
         push(10);
         push(30);
         push(2);
-        display();
+
+        //Demonstrating that we can get the minimum in O(1) time
         System.out.println("Getmin : "+GetMin());
         System.out.println("Popped : "+pop());
 
