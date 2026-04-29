@@ -34,4 +34,21 @@ public class StackSorter  {
             inputStack.push(auxiliaryStack.pop());
         }
     }
+    public static void sortStackRecursive(Stack<Integer> targetStack) {
+        if (targetStack.isEmpty())
+            return;
+        int poppedElement = targetStack.pop();
+        sortStackRecursive(targetStack);
+        insertInSortedOrder(targetStack, poppedElement);
+    }
+
+    private static void insertInSortedOrder(Stack<Integer> targetStack, int elementToInsert) {
+        if (targetStack.isEmpty() || elementToInsert >= targetStack.peek()) {
+            targetStack.push(elementToInsert);
+            return;
+        }
+        int tempVal = targetStack.pop();
+        insertInSortedOrder(targetStack, elementToInsert);
+        targetStack.push(tempVal);
+    }
 }
