@@ -10,7 +10,17 @@ public class StackSorter  {
         originalStack.push(1);
         originalStack.push(5);
 
+        System.out.println("Before : " + originalStack);
 
+        sortStack(originalStack);
+
+        System.out.println("After  : " + originalStack);
+        System.out.println();
     }
+
+    public static void sortStack(Stack<Integer> inputStack) {
+        Stack<Integer> auxiliaryStack = new Stack<>();
+        while (!inputStack.isEmpty()) {
+            int elementToPlace = inputStack.pop();
 
 }
